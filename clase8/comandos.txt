@@ -1,0 +1,25 @@
+comandos node
+
+Una sola vez:
+
+- instalar nodejs version estable LTS 24.00
+- verificar si se instalo con:
+
+node -v (te dice que version tenes instalada)
+npm -v (verificar version)
+
+- instalar pnpm (en el aula)
+npm i -g pnpm
+
+en cada proyecto:
+
+- Inicializar proyecto en la ruta que quiero iniciar el desarrollo
+pn init
+(crea el documento package.json)
+
+- Instalar un paquete:
+pn add five-server
+
+- creacion de .gitignore para ignorar node_modules y no se suba al repo
+- para volver a instalar lo que figura en package.json:
+pn install
