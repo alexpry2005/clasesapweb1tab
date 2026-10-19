@@ -1,0 +1,33 @@
+
+//arreglos
+
+los arreglos hablan de posociones, y se ordenan a partir de un indice
+tanto los arreglos como los objetos, deben ser distintos tipos de datos
+
+arreglos> indices= []> new array
+
+
+//objetos
+
+los objetos se ordenan por clave y valor = {}< new object
+
+//Funciones
+
+es un conjunto de instrucciones que nos devuelve un resultado o valor 
+podemos introducir datos y nos devuelve los datos, pero no siempre podemos introducir ni devolver
+
+//identificador
+
+es el nombre que le damos a una variable, constanste etc.
+
+//Funciones
+
+Flech:adquiere el ambito donde es declarada, tiene dentro su propio ambito, contiene la palabra dis cuando viene declarada
+
+como se declara?
+
+ es una funcion anonima, tengo que declararla, esta funcion no tiene un identificador
+debo declarar la funcion dentro de una constante
+
+callbaccks
+es una funcion que pasa a ser argumento de otra funcion, que se va a ejecutar dentro de la segunda funcion
