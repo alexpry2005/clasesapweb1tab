@@ -31,3 +31,14 @@ debo declarar la funcion dentro de una constante
 
 callbaccks
 es una funcion que pasa a ser argumento de otra funcion, que se va a ejecutar dentro de la segunda funcion
+
+
+//map 
+te devuelve un nuevo arrreglo al igual que filter
+
+//filter
+devuelve un nuevo arreglo
+
+
+//FIND
+ find devuelve el primer elemento que cumple la condicion
