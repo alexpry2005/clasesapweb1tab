@@ -42,3 +42,10 @@ devuelve un nuevo arreglo
 
 //FIND
  find devuelve el primer elemento que cumple la condicion
+
+
+//MODULOS
+que es? 
+un archivo de código separado que hace una sola cosa bien 
+hecha y que podés reutilizar en otras partes de tu aplicación
+ sin que se mezcle nada.
