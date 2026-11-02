@@ -1,6 +1,6 @@
 // import productos from "./productos.js" // -> no nombrada
-import {productosMascotas, categorias} from './productos.js' //-> nombrada
-import {filtrarPorTalle,renderizarCatalogo} from './funciones.js'
+//import {productosMascotas, categorias} from './productos.js' //-> nombrada
+import {filtrarPorTalle,renderizarCatalogo, obtenerDatos} from './funciones.js'
 
 //productosFiltrados.productosMascotas
 const productosEnCarro = [] //arreglo vacio para almacenar los productos que se agregan al carro
@@ -10,6 +10,9 @@ const productosEnCarro = [] //arreglo vacio para almacenar los productos que se 
 const contenedorProductos = document.getElementById("contenedor-productos")
 const botonEvento = document.getElementById(`boton-evento`)
 const dialogo = document.getElementById(`dialogo`)
+
+//Obtener datos
+obtenerDatos(`./recursos/datos/productos.json`)
 
 // Filtramos
 const productosFiltrados = filtrarPorTalle(productosMascotas, 'M')
@@ -38,3 +41,24 @@ botonEvento.addEventListener(`click`, (evento)=>{
                  productosSeleccionados.textContent = productosEnCarro.length
              }) 
      })
+
+
+import { filtrarPorTalle, obtenerDatos } from './funciones.js';
+
+async function iniciarApp() {
+    
+    //ejemplo de url
+    const urlJSON = './productos.json'; 
+
+    console.log("Cargando datos...");
+    const datos = await obtenerDatos(urlJSON);
+
+    if (datos && datos.productosMascotas) {
+        // Probamos la función de filtrar por talle (por ejemplo, buscamos los talles "M")
+        const productosTalleM = filtrarPorTalle(datos.productosMascotas, "M");
+        
+        console.log("Productos filtrados por talle M:", productosTalleM);
+    }
+}
+
+iniciarApp();

@@ -35,5 +35,18 @@ function filtrarPorTalle(productos /* el arreglo */, talle /* el talle */){
     })
     //return //el arreglo filtrado
 }
+function filtrarPorTalle(productos /* el arreglo */, talle /* el talle */){
+    // Trabajar con el filter
+    return productos.filter((producto)=>{
+        return producto.talles.includes(talle.toUpperCase())
+    })
+    //return //el arreglo filtrado
+}
 
-export {renderizarCatalogo, filtrarPorTalle}
+//despejamo un poco el codigo y lo hacemos mas legible
+async function obtenerDatos(url){
+    const respuesta = await fetch(url) //<- pedimos un recurso via 
+    console.log(respuesta) 
+}
+
+export {renderizarCatalogo, filtrarPorTalle, obtenerDatos}
