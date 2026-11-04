@@ -22,8 +22,9 @@ es el nombre que le damos a una variable, constanste etc.
 
 //Funciones
 
-Flech:adquiere el ambito donde es declarada, tiene dentro su propio ambito, contiene la palabra dis cuando viene declarada
-
+Fetch:adquiere el ambito donde es declarada, tiene dentro su propio ambito, contiene la palabra dis cuando viene declarada
+hace una peticion utilizando el protocolo http
+me devuelve un objeto que se llama response 
 como se declara?
 
  es una funcion anonima, tengo que declararla, esta funcion no tiene un identificador
@@ -49,3 +50,10 @@ que es?
 un archivo de código separado que hace una sola cosa bien 
 hecha y que podés reutilizar en otras partes de tu aplicación
  sin que se mezcle nada.
+
+
+ que es json? un contenedor datos que se usa para almacenar y intercambiar
+
+
+
+ en la actividad 13 una se llama DOM EVENTOS y el otro PERSISTENCIA 
